@@ -1,6 +1,17 @@
-@import 'reset.scss';
+@import "reset.scss";
+@import "variables.scss";
 
-.App {
+#root {
+    width: 100vw;
+    height: 100vh;
     text-align: center;
-    margin: 90px auto;
+    margin: 0 auto;
+    background-color: $bg-color;
+}
+
+.loader {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

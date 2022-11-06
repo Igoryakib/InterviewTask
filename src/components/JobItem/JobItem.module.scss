@@ -1,0 +1,79 @@
+@import "../../scss/variables.scss";
+
+.card {
+    max-width: 1400px;
+    width: 100%;
+    position: relative;
+    background-color: $bg-card-color;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 0 auto 8px;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 821px;
+}
+
+.wrapperText {
+    width: 712px;
+    text-align: left;
+}
+
+.wrapperAddress {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 20px;
+    color: $title-color;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $roboto;
+    color: $subtitle-color;
+    margin-bottom: 8px;
+}
+
+.address {
+    margin: 0 0 0 8px;
+}
+
+.image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.saveIcon {
+    position: absolute;
+    top: 29px;
+    right: 24px;
+}
+
+.dateCard {
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 24px;
+    right: 16px;
+}
+
+.rateContainer {
+    width: 95px;
+    position: absolute;
+    top: 73px;
+    right: 186px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

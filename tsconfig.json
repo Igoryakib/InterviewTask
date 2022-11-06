@@ -19,5 +19,5 @@
     // "files": ["./node_modules/wmr/types.d.ts"],
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": ["src"]
+  "include": ["src", "global.d.ts"]
 }
