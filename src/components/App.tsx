@@ -1,4 +1,4 @@
-import React, { useEffect, lazy, Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { MutatingDots } from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
@@ -8,7 +8,10 @@ const HomePage = lazy(
   () => import("../pages/HomePage/HomePage" /* webpackChunkName: "home-page" */)
 );
 const JobDetailsPage = lazy(
-  () => import("../pages/JobDetailsPage" /* webpackChunkName: "detail-page" */)
+  () =>
+    import(
+      "../pages/JobDetailsPage/JobDetailPage" /* webpackChunkName: "detail-page" */
+    )
 );
 
 const App = () => {

@@ -1,0 +1,112 @@
+@import "../../scss/variables.scss";
+
+.detailPage {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    background-color: $bg-card-color;
+}
+
+.sectionMainPart {
+    max-width: 730px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 56px;
+    text-align: left;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    margin-bottom: 39px;
+    border-bottom: 1px solid $bg-color;
+}
+
+.headerTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: $title-color;
+    font-family: $roboto;
+}
+
+.headerSubtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: $title-color;
+    font-family: $roboto;
+}
+
+.wrapperAdditionalInfo {
+    width: 247px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapperSubtitle {
+    width: 147px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapperSubtitleShare {
+    width: 75px;
+}
+
+.headerButton {
+    background-color: $title-color;
+    color: $bg-card-color;
+    padding: 18px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: $roboto;
+    text-transform: uppercase;
+    transition: 200ms linear;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    &:hover {
+        border: 2px solid $bg-card-color;
+    }
+}
+
+.wrapperSectionTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleSection {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 24px;
+    color: $title-color;
+    margin-bottom: 7px;
+}
+
+.titleSectionSalary {
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+.titleSectionAddress {
+    color: $title-color;
+}
+
+.subtitleSection {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $roboto;
+    color: $subtitle-color;
+    margin-bottom: 7px;
+}
+
+.descriptionSection {
+    color: $title-color;
+    margin-bottom: 39px;
+}
