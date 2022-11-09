@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { MutatingDots } from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import { path } from "../types/enums/path/paths";
+import { path } from "../types/enums/paths";
 
 const HomePage = lazy(
   () => import("../pages/HomePage/HomePage" /* webpackChunkName: "home-page" */)

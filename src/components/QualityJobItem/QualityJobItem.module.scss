@@ -1,0 +1,22 @@
+@import "../../scss/variables.scss";
+
+.container {
+    padding: 17px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $roboto;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.blueContainer {
+    background-color: $bg-darkBlue;
+    color: $text-color-darkBlue;
+    border: 1px solid $darkBorderColor;
+}
+
+.yellowContainer {
+    background-color: $bg_yellow;
+    color: $color-text-darkYellow;
+    border: 1px solid $borderYellow;
+}

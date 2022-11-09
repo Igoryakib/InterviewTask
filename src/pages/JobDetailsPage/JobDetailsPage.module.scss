@@ -6,31 +6,15 @@
     margin: 0 auto;
     text-align: center;
     background-color: $bg-card-color;
+    position: relative;
 }
 
 .sectionMainPart {
     max-width: 730px;
     width: 100%;
     margin: 0 auto;
-    padding-top: 56px;
+    padding: 56px 0 62px;
     text-align: left;
-}
-
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 8px;
-    margin-bottom: 39px;
-    border-bottom: 1px solid $bg-color;
-}
-
-.headerTitle {
-    font-size: 28px;
-    font-weight: 700;
-    color: $title-color;
-    font-family: $roboto;
 }
 
 .headerSubtitle {
@@ -56,23 +40,6 @@
 
 .wrapperSubtitleShare {
     width: 75px;
-}
-
-.headerButton {
-    background-color: $title-color;
-    color: $bg-card-color;
-    padding: 18px 30px;
-    font-size: 12px;
-    font-weight: 600;
-    font-family: $roboto;
-    text-transform: uppercase;
-    transition: 200ms linear;
-    margin-bottom: 32px;
-    border-radius: 8px;
-    border: 2px solid transparent;
-    &:hover {
-        border: 2px solid $bg-card-color;
-    }
 }
 
 .wrapperSectionTitle {
@@ -117,6 +84,7 @@
 }
 
 .sectionList {
+    margin-bottom: 39px;
     & li::before {
         display: inline-block;
         content: "";
@@ -131,3 +99,52 @@
     color: $title-color;
     margin-bottom: 0;
 }
+
+.additionalHeader {
+    margin-bottom: 15px !important;
+}
+
+.QualitiesJob {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.additionalListImg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 89px;
+}
+
+.additionalListImgItem {
+    width: 200px;
+    height: 116px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.returnBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -105px;
+    padding: 18px 26px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: $roboto;
+    text-transform: uppercase;
+    background-color: $bg-color;
+    color: $title-color;
+    border: 2px solid transparent;
+    transition: 200ms linear;
+    &:hover {
+        border: 2px solid $bg-card-color;
+    }
+}
+
+.returnBtnText {
+    margin-left: 19px;
+} 

@@ -1,0 +1,18 @@
+@import '../../scss/variables.scss';
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    margin-bottom: 39px;
+    border-bottom: 1px solid $bg-color;
+}
+
+.headerTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: $title-color;
+    font-family: $roboto;
+}

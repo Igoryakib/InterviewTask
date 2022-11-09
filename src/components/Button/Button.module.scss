@@ -1,0 +1,18 @@
+@import '../../scss/variables.scss';
+
+.button {
+    background-color: $title-color;
+    color: $bg-card-color;
+    padding: 18px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: $roboto;
+    text-transform: uppercase;
+    transition: 200ms linear;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    &:hover {
+        border: 2px solid $bg-card-color;
+    }
+}

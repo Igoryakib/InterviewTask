@@ -1,0 +1,19 @@
+@import '../../scss/variables.scss';
+
+.wrapperList {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.wrapperList--margin {
+    margin-bottom: 87px;
+}
+
+.subtitleSection {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $roboto;
+    color: $title-color;
+    margin-bottom: 10px;
+}
