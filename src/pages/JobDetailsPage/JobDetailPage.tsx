@@ -77,7 +77,35 @@ const JobDetailsPage = () => {
         >
           {job?.description}
         </p>
-        <h4></h4>
+        <h4 className={classnames(styles.titleSection, styles.titleSectionJob)}>
+          Responsibilities
+        </h4>
+        <p
+          className={classnames(
+            styles.subtitleSection,
+            styles.descriptionSection
+          )}
+        >
+          {job?.description}
+        </p>
+        <h4 className={classnames(styles.titleSection, styles.titleSectionJob)}>
+          Compensation & Benefits:
+        </h4>
+        <h4
+          className={classnames(styles.subtitleSection, styles.sectionListItem)}
+        >
+          Our physicians enjoy a wide range of benefits, including:
+        </h4>
+        <ul className={styles.sectionList}>
+          <li
+            className={classnames(
+              styles.subtitleSection,
+              styles.sectionListItem
+            )}
+          >
+            Hello
+          </li>
+        </ul>
       </section>
     </main>
   );

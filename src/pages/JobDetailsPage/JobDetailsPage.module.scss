@@ -110,3 +110,24 @@
     color: $title-color;
     margin-bottom: 39px;
 }
+
+.titleSectionJob {
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.sectionList {
+    & li::before {
+        display: inline-block;
+        content: "";
+        width: 9px;
+        height: 9px;
+        margin: 0 10px 2px;
+        background-color: rgba(56, 69, 100, 0.63);
+    }
+}
+
+.sectionListItem {
+    color: $title-color;
+    margin-bottom: 0;
+}
