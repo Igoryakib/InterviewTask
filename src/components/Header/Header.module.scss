@@ -1,13 +1,18 @@
-@import '../../scss/variables.scss';
+@import "../../scss/variables.scss";
 
 .header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     padding-bottom: 8px;
     margin-bottom: 39px;
-    border-bottom: 1px solid $bg-color;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid $bg-color;
+    }
 }
 
 .headerTitle {
@@ -15,4 +20,16 @@
     font-weight: 700;
     color: $title-color;
     font-family: $roboto;
+    width: 100%;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+    text-align: center;
+    border-bottom: 1px solid $bg-color;
+    @media screen and (min-width: 768px) {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        text-align: left;
+        width: auto;
+    }
 }

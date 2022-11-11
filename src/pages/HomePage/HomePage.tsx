@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { MutatingDots } from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import styles from "./HomePage.module.scss";
-import { IJobItem } from "../../types/interfaces/jobItem/jobItem";
+import { IJobItem } from "../../types/interfaces/jobItem";
 import { getDataArray } from "../../utils/fetchApi";
 import JobList from "../../components/JobList/JobList";
+import Pagination from "@mui/material/Pagination";
 
 const HomePage = () => {
   const [jobs, setJobs] = useState<IJobItem[]>();
@@ -21,20 +22,23 @@ const HomePage = () => {
   return (
     <main className={styles.homePage}>
       {loading ? (
-          <MutatingDots
-            height="100"
-            width="100"
-            color="#38415D"
-            secondaryColor="#38415D"
-            radius="12.5"
-            ariaLabel="mutating-dots-loading"
-            wrapperStyle={{}}
-            wrapperClass=""
-            visible={true}
-          />
+        <MutatingDots
+          height="100"
+          width="100"
+          color="#38415D"
+          secondaryColor="#38415D"
+          radius="12.5"
+          ariaLabel="mutating-dots-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+        />
       ) : (
         <JobList listJobs={jobs as IJobItem[]} />
       )}
+      <div className={styles.pagination}>
+        <Pagination count={18} variant="text" color="primary" />
+      </div>
     </main>
   );
 };

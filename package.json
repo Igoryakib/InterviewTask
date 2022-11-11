@@ -6,7 +6,6 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.9.0",
-    "@react-google-maps/api": "^2.16.1",
     "@reduxjs/toolkit": "^1.8.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -17,6 +16,7 @@
     "node-sass": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-maps": "^9.4.5",
     "react-loader-spinner": "^5.1.5",
     "react-notifications": "^1.7.3",
     "react-redux": "^8.0.2",
@@ -53,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@types/google.maps": "^3.50.5",
     "typescript": "^4.8.4"
   }
 }

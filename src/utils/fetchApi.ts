@@ -1,5 +1,5 @@
 import axios from "axios";
-import { IJobItem } from "../types/interfaces/jobItem/jobItem";
+import { IJobItem } from "../types/interfaces/jobItem";
 
 axios.defaults.baseURL =
   "https://api.json-generator.com/templates/ZM1r0eic3XEy";

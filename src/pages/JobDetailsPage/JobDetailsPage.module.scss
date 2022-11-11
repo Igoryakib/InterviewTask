@@ -7,6 +7,7 @@
     text-align: center;
     background-color: $bg-card-color;
     position: relative;
+    padding: 0 15px;
 }
 
 .sectionMainPart {
@@ -36,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .wrapperSubtitleShare {
@@ -114,6 +116,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow-x: scroll;
     margin-bottom: 89px;
 }
 
@@ -128,8 +131,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: -105px;
+    margin: 0 auto;
     padding: 18px 26px;
     border-radius: 8px;
     font-size: 12px;
@@ -143,8 +145,22 @@
     &:hover {
         border: 2px solid $bg-card-color;
     }
+    @media screen and (min-width: 768px) {
+        position: relative;
+        left: -105px;
+        margin: 0;
+    }
 }
 
 .returnBtnText {
     margin-left: 19px;
-} 
+}
+
+.filledIcon {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(9%) saturate(1914%) hue-rotate(188deg) brightness(88%)
+        contrast(91%);
+}
+
+.savedIcon {
+    transition: 200ms linear;
+}

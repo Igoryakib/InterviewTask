@@ -2,8 +2,13 @@
 
 .homePage {
     width: 100vw;
-    padding-top: 29px;
+    padding: 29px 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.pagination {
+    margin: 0 auto 64px;
 }

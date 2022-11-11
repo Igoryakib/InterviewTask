@@ -4,23 +4,37 @@
     max-width: 1400px;
     width: 100%;
     position: relative;
-    background-color: $bg-card-color;
+    background-color: $bg-color;
     border-radius: 8px;
     padding: 24px;
     margin: 0 auto 8px;
     box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    @media screen and (min-width: 1024px) {
+        background-color: $bg-card-color;
+    }
 }
 
 .content {
+    max-width: 821px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 821px;
 }
 
 .wrapperText {
-    width: 712px;
+    max-width: 712px;
+    width: 74%;
     text-align: left;
+    padding-top: 14px;
+    @media screen and (min-width: 768px) {
+        width: 88%;
+    }
+    @media screen and (min-width: 1024px) {
+        max-width: 712px;
+        width: 100%;
+        padding-top: 0;
+    }
 }
 
 .wrapperAddress {
@@ -30,11 +44,22 @@
 }
 
 .title {
+    font-size: 18px;
+    font-weight: 400;
     font-family: $roboto;
-    font-weight: 700;
-    font-size: 20px;
     color: $title-color;
     margin-bottom: 8px;
+    transition: 200ms linear;
+    @media screen and (min-width: 1024px) {
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+.title--hover {
+    &:hover {
+        color: $hoverTitle-color;
+    }
 }
 
 .subtitle {
@@ -50,30 +75,74 @@
 }
 
 .image {
-    width: 85px;
-    height: 85px;
+    width: 66px;
+    height: 66px;
     border-radius: 50%;
+    @media screen and (min-width: 1024px) {
+        width: 85px;
+        height: 85px;
+    }
 }
 
 .saveIcon {
     position: absolute;
     top: 29px;
     right: 24px;
+    display: none;
+    transition: 200ms linear;
+    cursor: pointer;
+    @media screen and (min-width: 1024px) {
+        display: block;
+    }
 }
 
 .dateCard {
     margin-bottom: 0;
     position: absolute;
-    bottom: 24px;
+    font-size: 14px;
+    font-weight: 300;
+    top: 13px;
     right: 16px;
+    @media screen and (min-width: 1024px) {
+        bottom: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        top: auto;
+        bottom: 24px;
+    }
 }
 
 .rateContainer {
-    width: 95px;
+    width: 55px;
     position: absolute;
-    top: 73px;
-    right: 186px;
+    top: 17px;
+    left: 76px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (min-width: 1024px) {
+        width: 95px;
+        top: 73px;
+        right: 186px;
+        left: auto;
+    }
+}
+
+.svgStarIcon {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    transition: 200ms linear;
+    &:hover {
+        filter: brightness(0) saturate(100%) invert(24%) sepia(11%) saturate(1634%) hue-rotate(188deg) brightness(97%)
+            contrast(92%);
+    }
+    @media screen and (min-width: 1024px) {
+        width: 18px;
+        height: 19px;
+    }
+}
+
+.filledIcon {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(9%) saturate(1914%) hue-rotate(188deg) brightness(88%) contrast(91%);
 }

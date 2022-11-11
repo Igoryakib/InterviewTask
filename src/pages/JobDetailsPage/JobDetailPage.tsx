@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { useParams, useNavigate } from "react-router-dom";
 import classnames from "classnames";
 import styles from "./JobDetailsPage.module.scss";
 import SvgSaved from "../../static/saved.svg";
 import SvgShare from "../../static/share.svg";
-import SvgArrow from '../../static/Arrow.svg';
+import SvgArrow from "../../static/Arrow.svg";
 
 // Utils & types
 import { buttons } from "../../types/enums/button";
-import { IJobItem } from "../../types/interfaces/jobItem/jobItem";
+import { quality } from "../../types/enums/quality";
+import { IJobItem } from "../../types/interfaces/jobItem";
 import { getDataArray } from "../../utils/fetchApi";
 
 // Components
@@ -17,7 +17,6 @@ import Button from "../../components/Button/Button";
 import Header from "../../components/Header/Header";
 import AdditionalInfoList from "../../components/AdditionalInfoList/AdditionalInfoList";
 import QualityJobItem from "../../components/QualityJobItem/QualityJobItem";
-import { quality } from "../../types/enums/quality";
 
 const JobDetailsPage = () => {
   const [job, setJob] = useState<IJobItem>();
@@ -40,13 +39,18 @@ const JobDetailsPage = () => {
       .finally(() => setLoading(false));
   }, []);
 
+  const onClickIcon = (): void => {
+    const target = document.querySelector("#save") as HTMLElement;
+    target.classList.toggle(styles.filledIcon);
+  };
+
   return (
     <main className={styles.detailPage}>
       <section className={styles.sectionMainPart}>
         <Header title="Job Details">
           <div className={styles.wrapperAdditionalInfo}>
-            <div className={styles.wrapperSubtitle}>
-              <img src={SvgSaved} alt="icon" />
+            <div onClick={onClickIcon} className={styles.wrapperSubtitle}>
+              <img id="save" className={styles.savedIcon} src={SvgSaved} alt="icon" />
               <span className={styles.headerSubtitle}>Save to my list</span>
             </div>
             <div

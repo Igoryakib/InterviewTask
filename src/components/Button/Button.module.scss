@@ -1,4 +1,4 @@
-@import '../../scss/variables.scss';
+@import "../../scss/variables.scss";
 
 .button {
     background-color: $title-color;
@@ -9,10 +9,16 @@
     font-family: $roboto;
     text-transform: uppercase;
     transition: 200ms linear;
-    margin-bottom: 32px;
     border-radius: 8px;
     border: 2px solid transparent;
+    text-align: center;
+    margin: 0 auto 32px;
+    display: flex;
+    justify-content: center;
     &:hover {
         border: 2px solid $bg-card-color;
+    }
+    @media screen and (min-width: 768px) {
+        display: inline-block;
     }
 }
