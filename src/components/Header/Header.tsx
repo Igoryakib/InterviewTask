@@ -1,4 +1,4 @@
-import React, {Children, FC} from "react";
+import React, {FC} from "react";
 import styles from './Header.module.scss';
 import classnames from 'classnames';
 

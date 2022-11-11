@@ -20,7 +20,6 @@ import QualityJobItem from "../../components/QualityJobItem/QualityJobItem";
 
 const JobDetailsPage = () => {
   const [job, setJob] = useState<IJobItem>();
-  const [loading, setLoading] = useState<boolean>(false);
   const params = useParams();
   const navigate = useNavigate();
   const date = new Date(job?.createdAt as string).toDateString();
@@ -28,7 +27,6 @@ const JobDetailsPage = () => {
     navigate(-1);
   };
   useEffect(() => {
-    setLoading(true);
     getDataArray()
       .then((data) => {
         setJob(data.find((item) => item.id === params.id));
@@ -36,7 +34,6 @@ const JobDetailsPage = () => {
       .catch((err) => {
         throw err;
       })
-      .finally(() => setLoading(false));
   }, []);
 
   const onClickIcon = (): void => {
