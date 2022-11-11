@@ -8,8 +8,12 @@ interface IButtonProps {
 }
 
 const Button: FC<IButtonProps> = ({ type, text }) => {
+  const onClickBtn = () => {
+    alert('Applied job');
+  };
+
   return (
-    <button className={styles.button} type={type}>
+    <button onClick={onClickBtn} className={styles.button} type={type}>
       {text}
     </button>
   );
