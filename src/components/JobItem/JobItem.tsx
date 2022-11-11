@@ -24,8 +24,8 @@ const JobItem: FC<IJobProps> = ({
   createdDate,
 }) => {
   const dateJob = new Date(createdDate).toDateString();
-  const onClickIcon = (): void => {
-    const target = document.querySelector("#save") as HTMLElement;
+  const onClickIcon = (event: React.MouseEvent<HTMLElement>): void => {
+    const target = event.target as HTMLElement;
     target.classList.toggle(styles.filledIcon);
   };
   return (
